@@ -195,71 +195,96 @@ a { color: inherit; text-decoration: none; }
   z-index: 1;
   background: linear-gradient(
     to bottom,
-    rgba(0,0,0,.45) 0%,
-    rgba(0,0,0,.35) 50%,
-    rgba(0,0,0,.65) 100%
+    rgba(0,0,0,.5)  0%,
+    rgba(0,0,0,.3)  40%,
+    rgba(0,0,0,.55) 100%
   );
 }
 .hero-content {
   position: relative;
   z-index: 2;
   padding: 2rem;
-  animation: fadeInUp .9s ease both;
+  max-width: 900px;
 }
 .hero-tagline {
   font-family: var(--font-sans);
-  font-size: .75rem;
-  font-weight: 400;
-  letter-spacing: .4em;
+  font-size: .72rem;
+  font-weight: 500;
+  letter-spacing: .55em;
   text-transform: uppercase;
   color: var(--gold);
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.8rem;
   animation: fadeInUp .9s .1s ease both;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+.hero-pretitle {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  font-style: italic;
+  font-weight: 300;
+  color: rgba(245,240,232,.55);
+  letter-spacing: .12em;
+  margin-bottom: .6rem;
 }
 .hero-title {
   font-family: var(--font-serif);
-  font-size: clamp(3rem, 10vw, 7rem);
+  font-size: clamp(3.5rem, 12vw, 9rem);
   font-weight: 300;
-  letter-spacing: .06em;
-  line-height: 1;
+  letter-spacing: .04em;
+  line-height: .95;
   color: var(--white);
-  text-shadow: 0 2px 40px rgba(0,0,0,.5);
-  margin-bottom: 1.5rem;
-  animation: fadeInUp .9s .2s ease both;
+  text-shadow: 0 4px 60px rgba(0,0,0,.6);
+  margin-bottom: 2rem;
+  animation: fadeInUp 1s .15s ease both;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+.hero-title em {
+  display: block;
+  font-style: italic;
+  color: var(--gold-light);
 }
 .hero-divider {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
+  gap: 1.2rem;
+  margin-bottom: 1.8rem;
   animation: fadeInUp .9s .3s ease both;
+  opacity: 0;
+  animation-fill-mode: forwards;
 }
 .hero-divider span {
   flex: 1;
-  max-width: 120px;
+  max-width: 100px;
   height: 1px;
   background: linear-gradient(90deg, transparent, var(--gold), transparent);
 }
 .hero-divider svg {
-  width: 18px; height: 18px;
+  width: 16px; height: 16px;
   fill: var(--gold);
-  opacity: .8;
+  opacity: .9;
 }
 .hero-sub {
-  font-size: .9rem;
-  letter-spacing: .15em;
+  font-size: .78rem;
+  letter-spacing: .22em;
   text-transform: uppercase;
-  color: rgba(245,240,232,.6);
+  color: rgba(245,240,232,.5);
   margin-bottom: 3rem;
   animation: fadeInUp .9s .4s ease both;
+  opacity: 0;
+  animation-fill-mode: forwards;
 }
 .hero-actions {
   display: flex;
   gap: 1.2rem;
   justify-content: center;
   flex-wrap: wrap;
-  animation: fadeInUp .9s .5s ease both;
+  animation: fadeInUp .9s .55s ease both;
+  opacity: 0;
+  animation-fill-mode: forwards;
 }
 .hero-scroll-hint {
   position: absolute;
