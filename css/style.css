@@ -1208,15 +1208,45 @@ a { color: inherit; text-decoration: none; }
   .nav-links a { font-size: 1rem; }
   .nav-toggle { display: flex; z-index: 1000; }
 
+  /* Burger → croix animée */
+  .nav-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-toggle.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+  .nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
   .gallery-card { width: 260px; height: 195px; }
   .section { padding: 4.5rem 0; }
   .hero-actions { flex-direction: column; align-items: center; }
-  .menu-item { flex-direction: column; gap: .4rem; }
+  .menu-item { flex-direction: column; gap: .4rem; padding-left: 1rem; }
   .menu-price { font-size: 1rem; }
+
+  .histoire-chiffres { flex-wrap: wrap; gap: 1.5rem; }
+  .histoire-intro { padding-left: 1rem; }
+  .histoire-intro::before { font-size: 3.5rem; top: -1rem; left: .5rem; }
+
+  .cards-grid { grid-template-columns: 1fr 1fr; }
+  .card::before { font-size: 4rem; }
+
+  .formules-grid { grid-template-columns: 1fr; }
+  .boissons-grid { grid-template-columns: 1fr; }
+
+  .priv-features { gap: 1.2rem; }
+  .priv-feature  { font-size: .75rem; }
+
+  .avis-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 480px) {
   .gallery-card { width: 220px; height: 165px; }
   .horaires-grid { gap: 2rem; }
   .horaires-note { min-width: unset; }
+  .container { padding: 0 1.2rem; }
+
+  .cards-grid { grid-template-columns: 1fr; }
+  .card::before { font-size: 5rem; }
+
+  .horaire-row { flex-wrap: wrap; gap: .4rem; }
+  .horaire-val { font-size: .82rem; text-align: left; }
+
+  .section-title { font-size: clamp(1.8rem, 7vw, 2.4rem); }
+  .priv-title    { font-size: clamp(1.6rem, 6vw, 2rem); }
 }
