@@ -158,6 +158,8 @@ a { color: inherit; text-decoration: none; }
   border-radius: 0;
 }
 .nav-cta:hover { background: var(--gold-light) !important; }
+.nav-links a.active-nav { color: var(--gold) !important; opacity: 1; }
+
 .nav-toggle {
   display: none;
   flex-direction: column;
