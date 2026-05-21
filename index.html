@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurant Le Saint Augustin — Longwy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════ NAVIGATION -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#accueil" class="nav-logo">
+        <span class="nav-logo-text">Le Saint Augustin</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#specialites">Spécialités</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#horaires">Horaires</a></li>
+        <li><a href="#contact" class="nav-cta">Nous contacter</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════ HERO -->
+  <section id="accueil" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tagline">Restaurant</p>
+      <h1 class="hero-title">Le Saint Augustin</h1>
+      <div class="hero-divider">
+        <span></span><svg viewBox="0 0 24 24"><path d="M12 2 L14 8 L20 8 L15 12 L17 18 L12 14 L7 18 L9 12 L4 8 L10 8 Z"/></svg><span></span>
+      </div>
+      <p class="hero-sub">Cuisine Traditionnelle &bull; Pâtes &bull; Grillades &bull; Couscous</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn btn-gold">Découvrir le menu</a>
+        <a href="#contact" class="btn btn-outline">Nous trouver</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Défiler</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ INTRO BANDE -->
+  <div class="band">
+    <div class="band-inner">
+      <span>Cuisine Traditionnelle</span>
+      <span class="band-dot">◆</span>
+      <span>Pâtes Fraîches</span>
+      <span class="band-dot">◆</span>
+      <span>Grillades</span>
+      <span class="band-dot">◆</span>
+      <span>Couscous (ven. &amp; sam. soir)</span>
+      <span class="band-dot">◆</span>
+      <span>Pizzas</span>
+      <span class="band-dot">◆</span>
+      <span>Poissons</span>
+      <span class="band-dot">◆</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════ SPÉCIALITÉS -->
+  <section id="specialites" class="section specialites">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Notre identité</p>
+        <h2 class="section-title">Une cuisine du cœur</h2>
+        <div class="title-ornament">◆</div>
+        <p class="section-desc">
+          Au cœur de Longwy, Le Saint Augustin vous accueille dans une atmosphère chaleureuse
+          pour vous faire vivre une expérience gastronomique alliant traditions françaises
+          et saveurs méditerranéennes.
+        </p>
+      </div>
+      <div class="cards-grid">
+        <div class="card" data-delay="0">
+          <div class="card-icon">🥩</div>
+          <h3>Viandes &amp; Grillades</h3>
+          <p>Filet de bœuf, magret de canard, pièces grillées travaillées avec soin et accompagnements généreux.</p>
+        </div>
+        <div class="card" data-delay="100">
+          <div class="card-icon">🍝</div>
+          <h3>Pâtes Maison</h3>
+          <p>Rigatoni, spaghettis, gnocchis, ravioles — des recettes généreuses aux sauces préparées chaque jour.</p>
+        </div>
+        <div class="card" data-delay="200">
+          <div class="card-icon">🫕</div>
+          <h3>Couscous</h3>
+          <p>Chaque vendredi et samedi soir, savourez un couscous traditionnel préparé avec passion.</p>
+        </div>
+        <div class="card" data-delay="300">
+          <div class="card-icon">🐟</div>
+          <h3>Poissons &amp; Fruits de mer</h3>
+          <p>Saumon grillé, gambas, fish &amp; chips, poisson du jour… la mer s'invite à votre table.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ MENU -->
+  <section id="menu" class="section menu-section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">À la carte</p>
+        <h2 class="section-title">Notre Menu</h2>
+        <div class="title-ornament">◆</div>
+      </div>
+
+      <div class="menu-tabs">
+        <button class="tab-btn active" data-tab="viandes">Viandes &amp; Grillades</button>
+        <button class="tab-btn" data-tab="poissons">Poissons</button>
+        <button class="tab-btn" data-tab="pates">Pâtes</button>
+        <button class="tab-btn" data-tab="boissons">Boissons</button>
+      </div>
+
+      <!-- VIANDES -->
+      <div class="tab-content active" id="tab-viandes">
+        <div class="menu-list">
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Taillade de faux filet</h4>
+              <p>Salade mixte, copeaux de grana-padano, huile d'olive, crème de balsamique, tomate, frites</p>
+            </div>
+            <span class="menu-price">24,90€</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Filet de bœuf grillé</h4>
+              <p>Purée de pommes de terre, légumes rôtis, jus de veau, salade mixte</p>
+            </div>
+            <span class="menu-price">32,90€</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Tartare de bœuf coupé au couteau</h4>
+              <p>Câpres, cornichons, oignon, persil, tabasco, sauce cocktail, roquette, oignon rouge, frites</p>
+            </div>
+            <span class="menu-price">22,50€</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>¼ Poulet fermier rôti au beurre et curcuma</h4>
+              <p>Frites ou purée, jus de volaille, salade mixte, tomate confite</p>
+            </div>
+            <span class="menu-price">21,90€</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Escalope de poulet pané</h4>
+              <p>Frites, salade, sauce aux champignons, herbes fraîches</p>
+            </div>
+            <span class="menu-price">17,90€</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Magret de canard grillé</h4>
+              <p>Légumes rôtis, pomme de terre au four, crème acidulée, salade mixte, fond brun, tomate confite</p>
+            </div>
+            <span class="menu-price">24,50€</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- POISSONS -->
+      <div class="tab-content" id="tab-poissons">
+        <div class="menu-list">
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Fish and chips</h4>
+              <p>Cabillaud pané, sauce tartare, frites, citron</p>
+            </div>
+            <span class="menu-price">17,90€</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Pavé de saumon grillé</h4>
+              <p>Riz à l'ail, amandes effilées, ciboulette ciselée, sauce au beurre acidulée</p>
+            </div>
+            <span class="menu-price">24,90€</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Poisson du jour selon arrivage</h4>
+              <p>Riz à l'ail, amandes effilées, pommes de terre rôties, sauce vierge, herbes fraîches, citron</p>
+            </div>
+            <span class="menu-price">23,90€</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Gambas grillées</h4>
+              <p>Ail, persil, citron, frites</p>
+            </div>
+            <span class="menu-price">25,90€</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Gambas en sauce</h4>
+              <p>Sauce tomate, ail, persil, citron, frites</p>
+            </div>
+            <span class="menu-price">26,90€</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PÂTES -->
+      <div class="tab-content" id="tab-pates">
+        <div class="menu-list">
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Rigatoni arrabbiata</h4>
+              <p>Pesto de basilic, mousse de fromage frais, pistache, tomate de couleur, herbes fraîches</p>
+            </div>
+            <span class="menu-price">18,90€</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Rigatoni au saumon</h4>
+              <p>Crème épaisse, mousse de fromage frais, herbes fraîches, citron</p>
+            </div>
+            <span class="menu-price">18,90€</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Rigatoni à la bolognaise</h4>
+              <p>Sauce tomate, bœuf haché, parmesan, basilic</p>
+            </div>
+            <span class="menu-price">17,90€</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Rigatoni du pécheur</h4>
+              <p>Consommé de crustacés écrémé, fruits de mer, gambas grillées, tomate confite, citron</p>
+            </div>
+            <span class="menu-price">22,90€</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Spaghettis arrabbiata</h4>
+              <p>Pesto de basilic, tomate confite, olives, basilic</p>
+            </div>
+            <span class="menu-price">17,40€</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Spaghettis bolognaise</h4>
+              <p>Sauce tomate à l'ail, bœuf haché, tomate confite, parmesan, basilic</p>
+            </div>
+            <span class="menu-price">17,90€</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Spaghettis aux fruits de mer</h4>
+              <p>Consommé de crustacés écrémé, fruits de mer, tomate confite, basilic</p>
+            </div>
+            <span class="menu-price">19,90€</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Spaghettis carbonara</h4>
+              <p>Crème épaisse, lardons, fromage râpé, jaune d'œuf, herbe fraîche</p>
+            </div>
+            <span class="menu-price">18,90€</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Raviole aux épinards et ricotta</h4>
+              <p>Crème de fromage, parmesan, éclats de pistache, herbes fraîches</p>
+            </div>
+            <span class="menu-price">18,90€</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4>Gnocchis végé</h4>
+              <p>Sauce tomate, petits pois frais, emmental gratiné, basilic</p>
+            </div>
+            <span class="menu-price">17,90€</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOISSONS -->
+      <div class="tab-content" id="tab-boissons">
+        <div class="boissons-grid">
+          <div class="boisson-cat">
+            <h3>🍺 Bières</h3>
+            <div class="menu-list">
+              <div class="menu-item"><div class="menu-item-info"><h4>Pression blonde (25cl)</h4></div><span class="menu-price">3,60€</span></div>
+              <div class="menu-item"><div class="menu-item-info"><h4>Pression (50cl)</h4></div><span class="menu-price">6,90€</span></div>
+              <div class="menu-item"><div class="menu-item-info"><h4>Picon bière (25cl)</h4></div><span class="menu-price">4,40€</span></div>
+              <div class="menu-item"><div class="menu-item-info"><h4>Picon bière (50cl)</h4></div><span class="menu-price">8,50€</span></div>
+              <div class="menu-item"><div class="menu-item-info"><h4>Bière artisanale locale (33cl)</h4></div><span class="menu-price">6,90€</span></div>
+              <div class="menu-item"><div class="menu-item-info"><h4>Chimay 9° (33cl)</h4></div><span class="menu-price">6,20€</span></div>
+              <div class="menu-item"><div class="menu-item-info"><h4>Duvel 8,2° (33cl)</h4></div><span class="menu-price">6,20€</span></div>
+              <div class="menu-item"><div class="menu-item-info"><h4>Orval 6,2° (33cl)</h4></div><span class="menu-price">6,20€</span></div>
+              <div class="menu-item"><div class="menu-item-info"><h4>Jupiler sans alcool (25cl)</h4></div><span class="menu-price">3,90€</span></div>
+            </div>
+          </div>
+          <div class="boisson-cat">
+            <h3>🥤 Softs</h3>
+            <div class="menu-list">
+              <div class="menu-item"><div class="menu-item-info"><h4>Eau plate / gazeuse (50cl)</h4></div><span class="menu-price">3,50€</span></div>
+              <div class="menu-item"><div class="menu-item-info"><h4>Coca-Cola / Coca zéro (33cl)</h4></div><span class="menu-price">4,00€</span></div>
+              <div class="menu-item"><div class="menu-item-info"><h4>Coca-Cola Cherry (33cl)</h4></div><span class="menu-price">4,30€</span></div>
+              <div class="menu-item"><div class="menu-item-info"><h4>Orangina (25cl)</h4></div><span class="menu-price">4,50€</span></div>
+              <div class="menu-item"><div class="menu-item-info"><h4>Fine Tea / Limonade / Cola / Tonic (33cl)</h4></div><span class="menu-price">4,00€</span></div>
+              <div class="menu-item"><div class="menu-item-info"><h4>Jus Granini (abricot, pomme, ananas, tomate)</h4></div><span class="menu-price">4,50€</span></div>
+              <div class="menu-item"><div class="menu-item-info"><h4>Sirop eau plate ou gazeuse (25cl)</h4></div><span class="menu-price">3,00€</span></div>
+              <div class="menu-item"><div class="menu-item-info"><h4>Bitter Venezzio (20cl)</h4></div><span class="menu-price">4,20€</span></div>
+            </div>
+          </div>
+          <div class="boisson-cat">
+            <h3>☕ Boissons Chaudes</h3>
+            <div class="menu-list">
+              <div class="menu-item"><div class="menu-item-info"><h4>Expresso</h4></div><span class="menu-price">2,50€</span></div>
+              <div class="menu-item"><div class="menu-item-info"><h4>Double expresso</h4></div><span class="menu-price">4,60€</span></div>
+              <div class="menu-item"><div class="menu-item-info"><h4>Allongé</h4></div><span class="menu-price">2,70€</span></div>
+              <div class="menu-item"><div class="menu-item-info"><h4>Déca</h4></div><span class="menu-price">2,70€</span></div>
+              <div class="menu-item"><div class="menu-item-info"><h4>Thé (au choix)</h4></div><span class="menu-price">2,50€</span></div>
+              <div class="menu-item"><div class="menu-item-info"><h4>Tisane</h4></div><span class="menu-price">2,50€</span></div>
+              <div class="menu-item"><div class="menu-item-info"><h4>Thé marocain à la menthe fraîche</h4></div><span class="menu-price">3,20€</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ GALERIE -->
+  <section id="galerie" class="section galerie-section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Nos créations</p>
+        <h2 class="section-title">Galerie</h2>
+        <div class="title-ornament">◆</div>
+      </div>
+    </div>
+
+    <div class="gallery-track-wrapper">
+      <div class="gallery-track" id="galleryTrack">
+        <!-- Rang 1 — original -->
+        <div class="gallery-card">
+          <div class="gallery-img" style="background: linear-gradient(135deg, #2c1810 0%, #8b4513 50%, #d4891a 100%);">
+            <div class="gallery-label">Rigatoni crème & basilic</div>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <div class="gallery-img" style="background: linear-gradient(135deg, #1a3a2a 0%, #2d6a4f 50%, #e76f51 100%);">
+            <div class="gallery-label">Rigatoni saumon & gambas</div>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <div class="gallery-img" style="background: linear-gradient(135deg, #3d1c0a 0%, #7b3f1e 50%, #c67c26 100%);">
+            <div class="gallery-label">Magret de canard</div>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <div class="gallery-img" style="background: linear-gradient(135deg, #1c0a0a 0%, #6b2121 50%, #c0392b 100%);">
+            <div class="gallery-label">Pâtes sauce tomate</div>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <div class="gallery-img" style="background: linear-gradient(135deg, #0a1a2c 0%, #1d4e89 50%, #f4c430 100%);">
+            <div class="gallery-label">Tarte caramélisée</div>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <div class="gallery-img" style="background: linear-gradient(135deg, #1a1a0a 0%, #5a5a1a 50%, #d4a843 100%);">
+            <div class="gallery-label">Crème brûlée</div>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <div class="gallery-img" style="background: linear-gradient(135deg, #0a2c1a 0%, #1d6b44 50%, #f4a261 100%);">
+            <div class="gallery-label">Tartine saumon &amp; fleurs</div>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <div class="gallery-img" style="background: linear-gradient(135deg, #2c1f0a 0%, #7b5c2a 50%, #e9c46a 100%);">
+            <div class="gallery-label">Filet de bœuf grillé</div>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <div class="gallery-img" style="background: linear-gradient(135deg, #1a1a2c 0%, #5a4a7b 50%, #d4a843 100%);">
+            <div class="gallery-label">Crème brûlée aux fruits</div>
+          </div>
+        </div>
+        <!-- Rang 1 — clone pour boucle infinie -->
+        <div class="gallery-card">
+          <div class="gallery-img" style="background: linear-gradient(135deg, #2c1810 0%, #8b4513 50%, #d4891a 100%);">
+            <div class="gallery-label">Rigatoni crème &amp; basilic</div>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <div class="gallery-img" style="background: linear-gradient(135deg, #1a3a2a 0%, #2d6a4f 50%, #e76f51 100%);">
+            <div class="gallery-label">Rigatoni saumon &amp; gambas</div>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <div class="gallery-img" style="background: linear-gradient(135deg, #3d1c0a 0%, #7b3f1e 50%, #c67c26 100%);">
+            <div class="gallery-label">Magret de canard</div>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <div class="gallery-img" style="background: linear-gradient(135deg, #1c0a0a 0%, #6b2121 50%, #c0392b 100%);">
+            <div class="gallery-label">Pâtes sauce tomate</div>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <div class="gallery-img" style="background: linear-gradient(135deg, #0a1a2c 0%, #1d4e89 50%, #f4c430 100%);">
+            <div class="gallery-label">Tarte caramélisée</div>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <div class="gallery-img" style="background: linear-gradient(135deg, #1a1a0a 0%, #5a5a1a 50%, #d4a843 100%);">
+            <div class="gallery-label">Crème brûlée</div>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <div class="gallery-img" style="background: linear-gradient(135deg, #0a2c1a 0%, #1d6b44 50%, #f4a261 100%);">
+            <div class="gallery-label">Tartine saumon &amp; fleurs</div>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <div class="gallery-img" style="background: linear-gradient(135deg, #2c1f0a 0%, #7b5c2a 50%, #e9c46a 100%);">
+            <div class="gallery-label">Filet de bœuf grillé</div>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <div class="gallery-img" style="background: linear-gradient(135deg, #1a1a2c 0%, #5a4a7b 50%, #d4a843 100%);">
+            <div class="gallery-label">Crème brûlée aux fruits</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="gallery-hint">Passez votre souris pour suspendre le défilement</p>
+  </section>
+
+  <!-- ═══════════════════════════════════════ HORAIRES -->
+  <section id="horaires" class="section horaires-section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Quand nous rendre visite</p>
+        <h2 class="section-title">Horaires d'ouverture</h2>
+        <div class="title-ornament">◆</div>
+      </div>
+      <div class="horaires-grid">
+        <div class="horaires-table">
+          <div class="horaire-row">
+            <span class="horaire-jour">Lundi</span>
+            <span class="horaire-val ferme">Fermé</span>
+          </div>
+          <div class="horaire-row">
+            <span class="horaire-jour">Mardi</span>
+            <span class="horaire-val">11h45 – 13h30 &nbsp;|&nbsp; 18h45 – 21h30</span>
+          </div>
+          <div class="horaire-row">
+            <span class="horaire-jour">Mercredi</span>
+            <span class="horaire-val">11h45 – 13h30</span>
+          </div>
+          <div class="horaire-row">
+            <span class="horaire-jour">Jeudi</span>
+            <span class="horaire-val">11h45 – 13h30 &nbsp;|&nbsp; 18h45 – 21h30</span>
+          </div>
+          <div class="horaire-row">
+            <span class="horaire-jour">Vendredi</span>
+            <span class="horaire-val">11h45 – 13h30 &nbsp;|&nbsp; 18h45 – 21h30</span>
+          </div>
+          <div class="horaire-row highlight">
+            <span class="horaire-jour">Samedi</span>
+            <span class="horaire-val">11h45 – 13h30 &nbsp;|&nbsp; 18h45 – 21h30 <em>(couscous le soir)</em></span>
+          </div>
+          <div class="horaire-row">
+            <span class="horaire-jour">Dimanche</span>
+            <span class="horaire-val ferme">Fermé</span>
+          </div>
+        </div>
+        <div class="horaires-note">
+          <div class="note-icon">🫕</div>
+          <h3>Couscous traditionnel</h3>
+          <p>Tous les <strong>vendredis</strong> et <strong>samedis soir</strong>, découvrez notre couscous maison préparé avec passion.</p>
+          <a href="tel:0382239468" class="btn btn-gold btn-sm">Réserver une table</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ CONTACT -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Venir nous voir</p>
+        <h2 class="section-title">Contact &amp; Accès</h2>
+        <div class="title-ornament">◆</div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-infos">
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <h4>Adresse</h4>
+              <p>20 Rue Victor Hugo<br />54400 Longwy</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <h4>Téléphone</h4>
+              <p><a href="tel:0382239468">03 82 23 94 68</a><br /><a href="tel:0695827719">06 95 82 77 19</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:contact@le-saint-augustin.com">contact@le-saint-augustin.com</a></p>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+              Restaurant le Saint Augustin
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+              @lesaint.augustin
+            </a>
+          </div>
+        </div>
+        <div class="contact-map">
+          <iframe
+            title="Carte Restaurant Le Saint Augustin"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=5.752%2C49.516%2C5.772%2C49.526&layer=mapnik&marker=49.521%2C5.762"
+            loading="lazy"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <p class="footer-name">Le Saint Augustin</p>
+        <p class="footer-tagline">Cuisine Traditionnelle · Longwy</p>
+      </div>
+      <div class="footer-links">
+        <a href="#accueil">Accueil</a>
+        <a href="#menu">Menu</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#horaires">Horaires</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="footer-copy">&copy; 2025 Restaurant Le Saint Augustin — 20 Rue Victor Hugo, 54400 Longwy</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
