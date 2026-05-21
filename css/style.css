@@ -185,19 +185,26 @@ a { color: inherit; text-decoration: none; }
   justify-content: center;
   text-align: center;
   overflow: hidden;
-  background-image: url('../images/IMG_7268.jpeg');
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
+  background: var(--black);
+}
+.hero-bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  z-index: 0;
 }
 .hero-overlay {
   position: absolute;
   inset: 0;
+  z-index: 1;
   background: linear-gradient(
     to bottom,
-    rgba(0,0,0,.55) 0%,
-    rgba(0,0,0,.45) 50%,
-    rgba(0,0,0,.75) 100%
+    rgba(0,0,0,.45) 0%,
+    rgba(0,0,0,.35) 50%,
+    rgba(0,0,0,.65) 100%
   );
 }
 .hero-content {
