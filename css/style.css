@@ -599,6 +599,65 @@ a { color: inherit; text-decoration: none; }
 }
 
 /* ═══════════════════════════════════════════════════════
+   AVIS CLIENTS
+   ═══════════════════════════════════════════════════════ */
+.avis-section { background: var(--black); }
+.avis-stars-global {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .8rem;
+  margin-top: .5rem;
+}
+.avis-stars-global .stars { color: var(--gold); font-size: 1.2rem; letter-spacing: .1em; }
+.avis-stars-global span { font-size: .8rem; color: var(--grey); }
+.avis-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+.avis-card {
+  background: var(--black-card);
+  border: 1px solid rgba(201,168,76,.1);
+  padding: 2rem;
+  transition: border-color var(--transition), transform var(--transition);
+}
+.avis-card:hover {
+  border-color: rgba(201,168,76,.4);
+  transform: translateY(-4px);
+}
+.avis-stars { color: var(--gold); font-size: 1rem; letter-spacing: .1em; margin-bottom: 1rem; }
+.avis-text {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1rem;
+  color: rgba(245,240,232,.8);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+.avis-author {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+}
+.avis-avatar {
+  width: 38px; height: 38px;
+  border-radius: 50%;
+  background: var(--gold-dark);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+.avis-author strong { display: block; font-size: .88rem; color: var(--white); font-weight: 400; }
+.avis-author span { font-size: .75rem; color: var(--grey); }
+.avis-cta { text-align: center; }
+
+/* ═══════════════════════════════════════════════════════
    HORAIRES
    ═══════════════════════════════════════════════════════ */
 .horaires-section { background: var(--black); }
